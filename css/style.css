@@ -1,0 +1,36 @@
+*{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+body{
+    margin: 0;
+    width: 100%;
+    background-color: black;
+}
+
+.cabecalho{
+    width: 100%;
+    height: 450px;
+
+    padding-top: 40px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 100px;
+
+    background: linear-gradient(to bottom, rgba(96, 1, 184, 0.651), rgba(27, 0, 53, 0.801), black);
+}
+
+.foto{
+    background-image: url("../imagens/foto_perfil_linkedin.jpeg");
+    background-size: 200px;
+    background-position: 100% 80%;
+
+    border-radius: 50%;
+
+    width: 200px;
+    height: 200px;
+    box-shadow: 8px 8px 1px rgb(0, 51, 128);
+}
