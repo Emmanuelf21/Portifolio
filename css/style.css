@@ -34,3 +34,24 @@ body{
     height: 200px;
     box-shadow: 8px 8px 1px rgb(0, 51, 128);
 }
+
+
+.container{
+    width: 100%;
+    padding: 20px;
+}
+
+.menu-lateral{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    position: fixed;
+    left: 0;
+    top: 50%;
+}
+
+.menu-lateral a{
+    text-decoration: none;
+    font-size: 22px;
+    color: blueviolet;
+}
