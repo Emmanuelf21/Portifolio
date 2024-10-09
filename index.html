@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="" type="image/x-icon">
 </head>
 <body>
-    <header class="cabecalho">
+    <header id="home" class="cabecalho">
         <div class="foto"></div>
         <article class="infos">
             <h1>Emmanuel Franco Rodrigues</h1>
@@ -56,16 +56,17 @@
     <main class="container">
         <menu class="menu-lateral">
             <!-- colocar icones para cada tag a -->
-            <a class="icones" href=""><img src="imagens/inicio.png" alt="Home"></a>
-            <a class="icones" href=""><img src="imagens/sobre.png" alt="Sobre"></a>
-            <a class="icones" href=""><img src="imagens/projetos.png" alt="Projetos"></a>
+            <a class="icones" href="#home"><img src="imagens/inicio.png" alt="Home"></a>
+            <a class="icones" href="#sobre"><img src="imagens/sobre.png" alt="Sobre"></a>
+            <a class="icones" href="#portifolio"><img src="imagens/projetos.png" alt="Projetos"></a>
         </menu>
-        <section class="sobre">
+
+        <section id="sobre" class="sobre">
             <h1 class="titulos-h1">Sobre</h1>
             <article class="artigo-sobre">
                 <img src="" alt=""> <!--colocar alguma imagem aqui-->
                 <span class="sobre-info">
-                    <h3>MUITO PRAZER,<br><h3>SOU EMMANUEL FRANCO.</h3></h3>
+                    <h3 class="texto-branco">MUITO PRAZER,<br><h3 class="texto-azul">SOU EMMANUEL FRANCO.</h3></h3>
                     <p></p><!-- informações sobre mim -->
                     <a href="https://www.linkedin.com/in/emmanuel-franco-dev/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                     <a href="https://github.com/Emmanuelf21" target="_blank"><i class="fa-brands fa-github"></i></a>
@@ -73,10 +74,29 @@
             </article>
             
         </section>
-        <section class="projetos">
-            <h1 class="titulos-h1">Projetos</h1>
-            <article>
-                <!-- inserir cada projeto em forma de card -->
+
+        <section id="portifolio" class="projetos">
+            <div class="alinhar-texto">
+                <h1 class="texto-branco">MEU</h1><h1 class="texto-azul">PORTIFÓLIO!</h1>
+            </div>
+            <article class="projetos-flex">
+                <span class="projeto1">
+                    <div class="slide-track">
+                        <div class="slide">
+                            <img src="imagens/projeto1/img1.PNG" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="imagens/projeto1/img2.PNG" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="" alt="">
+                        </div>
+                    </div>
+                </span>
+                
             </article>
         </section>
     </main>

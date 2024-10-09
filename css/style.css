@@ -41,6 +41,14 @@ body{
     flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+}
+
+.habilidade:hover img{
+    width: 35px;
+    height: 35px;
+    background-color: rgba(137, 43, 226, 0.626);
+    box-shadow: 0px 0px 20px rgb(149, 0, 122);
 }
 
 .habilidade img{
@@ -64,7 +72,7 @@ body{
 
 /* menu lateral e icones de navegação */
 .menu-lateral{
-    height: 300px;
+    height: 250px;
     width: 50px;
     display: flex;
     flex-direction: column;
@@ -73,17 +81,13 @@ body{
     gap: 40px;
     position: fixed;
     left: 0;
-    top: 40%;
-    border-right: 2px solid rgb(76, 43, 226);
+    bottom: 50%;
 }
 
 .menu-lateral a{
     text-decoration: none;
     font-size: 22px;
     color: rgb(76, 43, 226);
-    position: relative;
-    right: -25px;
-    
 }
 
 .icones{
@@ -111,4 +115,29 @@ body{
 .sobre{
     width: 80%;
     margin: auto;
+}
+.sobre h1{
+    width: fit-content;
+}
+
+.texto-branco{
+    color: white;
+}
+
+.texto-azul{
+    color: rgb(0, 255, 242);
+}
+
+/* section de projetos */
+.projetos{
+    width: 80%;
+    margin: auto;
+}
+
+.alinhar-texto{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
 }
