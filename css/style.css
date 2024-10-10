@@ -72,7 +72,7 @@ body{
 
 /* menu lateral e icones de navegação */
 .menu-lateral{
-    height: 250px;
+    height: 260px;
     width: 50px;
     display: flex;
     flex-direction: column;
@@ -81,7 +81,7 @@ body{
     gap: 40px;
     position: fixed;
     left: 0;
-    bottom: 50%;
+    top: 0;
 }
 
 .menu-lateral a{
