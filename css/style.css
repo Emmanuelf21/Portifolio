@@ -238,32 +238,6 @@ body{
     width: 100%;
 }
 
-/* Keyframes e Property */
-@keyframes slider {
-    0%{
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-    }
-    100%{
-        -webkit-transform: translateX(calc(-650px * 4));
-        transform: translateX(calc(-650px * 4));
-    }
-}
-
-@property --angle{
-    syntax: "<angle>";
-    initial-value: 0deg;
-    inherits: false;
-}
-
-@keyframes spin {
-   from{
-    --angle: 0deg;
-   }
-   to{
-    --angle: 360deg;
-   }
-}
 .info-do-projeto{
     width: 100%;
     height: 100%;
@@ -272,7 +246,8 @@ body{
     display: none;
     transition: all 1s ease-in;
     backdrop-filter: blur(3px);
-    }
+}
+
 .info-do-projeto a{
     text-decoration: none;
 
@@ -309,4 +284,32 @@ body{
     border-radius: 10px;
     background: radial-gradient(rgba(182, 182, 182, 0.422), rgba(23, 0, 59, 0.884)75%);
 }
+
+/* Keyframes e Property */
+@keyframes slider {
+    0%{
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100%{
+        -webkit-transform: translateX(calc(-650px * 4));
+        transform: translateX(calc(-650px * 4));
+    }
+}
+
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+@keyframes spin {
+   from{
+    --angle: 0deg;
+   }
+   to{
+    --angle: 360deg;
+   }
+}
+
 
