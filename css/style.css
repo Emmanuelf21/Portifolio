@@ -191,12 +191,18 @@ body{
     align-items: center;
     position: relative;
     gap: 10px;
-    height: 300px;
     
 }
 
+.projeto{
+    overflow: hidden;
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
 
-.projetos-flex::after, .projetos-flex::before{
+.projeto::after, .projeto::before{
     content: '';
     position: absolute;
     top: 50%;
@@ -211,18 +217,11 @@ body{
     animation: spin 5s linear infinite;
 }
 
-.projetos-flex::before{
+.projeto::before{
     filter: blur(1.0rem);
     opacity: 0.5rem;
 }
 
-.projeto{
-    overflow: hidden;
-    margin: auto;
-    height: 100%;
-    width: 100%;
-    border-radius: 10px;
-}
 .projeto .slide-track{
     display: flex;
     animation: slider 12s linear infinite;
