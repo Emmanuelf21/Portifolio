@@ -122,12 +122,30 @@
                     </div>
                 </span>
             </article>
-            <!-- colocar descrição do projeto -->
         </section>
 
         <!-- formulário de contato -->
-        <section>
-            <form action=""></form>
+        <section class="section-formulario">
+            <div class="alinhar-texto-esquerda">
+                <h1 class="texto-branco">Entre em <h1 class="texto-azul">Contato</h1></h1>
+            </div>
+            <div class="formulario">
+                <form method="post" action="php/enviaEmail.php">
+                    <div class="um-input">
+                        <input type="text" name="nome" id="nome" required autocomplete="off">
+                        <label for="nome">Nome:</label>
+                    </div>
+                    <div class="um-input">
+                        <input type="text" name="email" id="email" required autocomplete="off">
+                        <label for="email">E-mail:</label>
+                    </div>
+                    <div class="textarea">
+                        <textarea name="mensagem" id="mensagem" required autocomplete="off"></textarea>
+                        <label for="mensagem">Sua mensagem:</label>
+                    </div>
+                    <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
+                </form>
+            </div>
         </section>
     </main>
 </body>
