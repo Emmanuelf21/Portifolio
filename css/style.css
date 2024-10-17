@@ -350,9 +350,11 @@ body{
     transition: all 0.2s linear;
 }
 
-form .um-input .inputs:focus ~label, form .textarea textarea:focus ~label{
+form .um-input .inputs:focus ~label, form .textarea textarea:focus ~label,
+form .um-input .inputs:valid ~label, form .textarea textarea:valid ~label{
     transform: translateY(-40px);
-    font-size: 18px
+    font-size: 18px;
+    color: rgb(0, 255, 242);
 }
 
 .textarea textarea{
